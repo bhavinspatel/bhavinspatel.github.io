@@ -1,1 +1,215 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavin Patel | Senior Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;Bhavin /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="container hero-content">
+      <p class="greeting">Hi, my name is</p>
+      <h1 class="name">Bhavin Patel</h1>
+      <h2 class="tagline">Senior Software Engineer</h2>
+      <p class="description">
+        Specializing in building scalable web platforms, backend architectures, ERP solutions, and cloud infrastructure using Python, PostgreSQL, and Linux.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="#projects" class="btn btn-secondary">View Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hello! I'm Bhavin, a passionate <strong>Senior Software Engineer</strong> with extensive experience designing, developing, and deploying robust software systems.
+          </p>
+          <p>
+            My main focus lies in crafting efficient backend APIs with modern Python frameworks (FastAPI, Django, Flask), managing enterprise workflows with <strong>Odoo</strong>, optimizing database performance on <strong>PostgreSQL</strong>, and orchestrating containerized deployments with <strong>Kubernetes</strong> and Linux.
+          </p>
+          <p>
+            I strongly believe in writing clean, maintainable code, leveraging solid Data Structures & Algorithms (DSA), and creating reliable CI/CD automation pipelines.
+          </p>
+        </div>
+        <div class="about-card">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">bhavin@developer:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> cat profile.json</p>
+              <pre>{
+  "name": "Bhavin Patel",
+  "role": "Senior Software Engineer",
+  "focus": "Backend & Cloud Systems",
+  "languages": ["Python", "SQL", "Bash"],
+  "status": "Open to impactful engineering challenges"
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title"><span>02.</span> Technical Expertise</h2>
+      <div class="skills-grid">
+        
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-code"></i> Core & Frameworks</h3>
+          <div class="tags">
+            <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="tag"><i class="fa-solid fa-cubes"></i> Odoo</span>
+            <span class="tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+            <span class="tag"><i class="fa-solid fa-leaf"></i> Django</span>
+            <span class="tag"><i class="fa-solid fa-flask"></i> Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-database"></i> Databases & CS Fundamentals</h3>
+          <div class="tags">
+            <span class="tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+            <span class="tag"><i class="fa-solid fa-diagram-project"></i> DSA (Data Structures & Alg)</span>
+            <span class="tag"><i class="fa-solid fa-table"></i> Relational Modeling</span>
+            <span class="tag"><i class="fa-solid fa-gears"></i> Query Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-server"></i> Cloud & DevOps</h3>
+          <div class="tags">
+            <span class="tag"><i class="fa-brands fa-linux"></i> Linux Administration</span>
+            <span class="tag"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</span>
+            <span class="tag"><i class="fa-brands fa-github"></i> GitHub Actions / Workflows</span>
+            <span class="tag"><i class="fa-brands fa-gitlab"></i> GitLab CI/CD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section Placeholder -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><span>03.</span> Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fa-regular fa-folder project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Enterprise Odoo Module Customization</h3>
+          <p class="project-desc">
+            Custom ERP workflows, automated reporting, and external API sync built on top of Odoo and PostgreSQL.
+          </p>
+          <ul class="project-tech">
+            <li>Python</li>
+            <li>Odoo</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fa-regular fa-folder project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Scalable REST/gRPC Microservices</h3>
+          <p class="project-desc">
+            High-throughput API services built with FastAPI & Asyncio, deployed on Kubernetes clusters with full CI/CD.
+          </p>
+          <ul class="project-tech">
+            <li>FastAPI</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>GitLab CI</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fa-regular fa-folder project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Linux Automation & DevOps Pipeline</h3>
+          <p class="project-desc">
+            Automated deployment scripts, infrastructure setup, and monitoring configs on Linux server environments.
+          </p>
+          <ul class="project-tech">
+            <li>Linux</li>
+            <li>Bash</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title center"><span>04.</span> What's Next?</h2>
+      <h1 class="contact-heading">Get In Touch</h1>
+      <p class="contact-desc">
+        Whether you have a question, a project opportunity, or just want to discuss Python, database optimizations, or system architecture, feel free to drop me a message!
+      </p>
+      <a href="mailto:your.email@example.com" class="btn btn-primary btn-lg">Say Hello</a>
+      
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://gitlab.com" target="_blank" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built by Bhavin Patel</p>
+  </footer>
+
+</body>
+</html>
